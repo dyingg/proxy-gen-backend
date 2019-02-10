@@ -93,15 +93,6 @@ function makeProxy(key, script) {
       getImage(ec2).then(amazonId => {
         var uniqueID = uuid();
         var params = {
-          BlockDeviceMappings: [
-            {
-              DeviceName: "/dev/sdh",
-              Ebs: {
-                VolumeSize: 100,
-                DeleteOnTermination: true
-              }
-            }
-          ],
 
           ImageId: amazonId,
           InstanceType: "t2.micro",
