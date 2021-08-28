@@ -5,9 +5,11 @@ const users = require("./models/users.js");
 
 const actions = require("./models/actions.js");
 
+
+//DROP UTILITY
 mongoose
   .connect(
-    "mongodb+srv://root:adminpass@cluster0-jiesw.mongodb.net/test?retryWrites=true",
+    "MONGO CONNECT URL HERE",
     { useNewUrlParser: true }
   )
   .then(() => {
